@@ -33,7 +33,7 @@ public class GameManager : MonoSingleton<GameManager> {
 
 	protected void Start()
 	{
-		StartGame();
+		GamePlayDialog play = GUIManager.Instance.OnShowDialog<GamePlayDialog>("Play");
 	}
 
 	public void StartGame()
